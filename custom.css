@@ -1,0 +1,44 @@
+/* ---------------------------CUSTOM STYLING---------------------------- */
+
+/* Dino Font by Devfolio */
+
+@font-face {
+  font-family: 'OnchainDino';
+  src: url('/extra/OnchainDino-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.trex-game {
+  max-width: 600px;
+  width: 100%;
+}
+
+.trex-game .runner-container {
+  transition: all 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: OnchainDino;
+  text-transform: uppercase;
+  color: rgb(122, 122, 122);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
