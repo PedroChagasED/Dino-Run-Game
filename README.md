@@ -54,6 +54,7 @@ We have extracted this source code from chromium and have made some changes on t
 2. Removed singleton pattern which prevents initializing another instance from the Runner class.
 3. Removed slow speed mode checkbox. (It can still be enabled by clicking on the T-Rex first and then starting the game)
 4. Attached Runner to `window.Runner` and removed circular dependency in any files. (Modern compilers treat it as a bad practice and throws an error)
+5. Migrated some deprecated functions.
 
 ## How to run in new project?
 
