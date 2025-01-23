@@ -2,6 +2,10 @@
 
 This the latest source code for T-rex Runner extracted from newly migrated code in chromium source code. We have also applied some more changes on the top of it to make it independent of chromium browser and improved code patterns. The code is ES6 without any circular dependency (found in original source code) which makes it easy to integrate with modern codebases like React, NextJS, etc. Here is an improved documentation on how to start editing this game to build a new variant.
 
+## Demo
+
+![Demo](demo.gif)
+
 ## Updating Game Assets
 
 The game assets are loaded from the offline-resources div in the HTML. There are two main types of assets:
