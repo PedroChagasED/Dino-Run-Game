@@ -135,3 +135,26 @@ The Runner class provides several methods to control the game. Here are the key 
 - `updateHighScore(highScore)` - Updates the high score
 - `distanceRan()` - Gets the current distance/score
 - `getSpeedY()` - Gets current vertical speed
+
+### Older Source Code
+
+The older source code from 2016 can be found in the [wayou/t-rex-runner](https://github.com/wayou/t-rex-runner) repository. This version uses ES5 syntax without classes. Shout-out to [@wayou](https://github.com/wayou) for maintaining it.
+
+Key differences from the current version:
+
+- Uses constructor functions instead of ES6 classes
+- No module system, all code in one file
+- Global namespace with `Runner` object
+- Prototype-based inheritance
+- No strict mode
+- Older browser compatibility
+
+### Original Chromium Repository
+
+Source Code : https://source.chromium.org/chromium/chromium/src/+/main:components/neterror/resources/
+
+Github Mirror : https://github.com/chromium/chromium/tree/main/components/neterror/resources
+
+# Contributing
+
+Feel free to open [issues](https://github.com/devfolioco/t-rex-runner-game/issues/new/choose) and [pull requests](https://github.com/devfolioco/t-rex-runner-game/pulls)!
