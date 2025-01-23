@@ -617,7 +617,7 @@ export class Runner {
       '(prefers-color-scheme: dark)'
     );
     this.isDarkMode = darkModeMediaQuery && darkModeMediaQuery.matches;
-    darkModeMediaQuery.addEventListener(e => {
+    darkModeMediaQuery.addEventListener('change', e => {
       this.isDarkMode = e.matches;
     });
   }
