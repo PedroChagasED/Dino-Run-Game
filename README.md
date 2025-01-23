@@ -1,6 +1,6 @@
 # T-rex Runner from Chromium 2024
 
-This the latest source code for T-rex Runner extracted from newly migrated code in chromium source code. We have also applied some more changes on the top of it to make it independent of chromium browser and improved code patterns. The code is ES6 without any circular dependency (found in original source code) which makes it easy to integrate with modern codebases like React, NextJS, etc. Here is an improved documentation on how to start editing this game to build a new variant.
+This is the latest version of the T-Rex Runner source code, extracted from the newly migrated Chromium repository. We have enhanced it further to make it independent of the Chromium browser and to improve the overall code structure. This is the latest codebase written in ES6, free from the circular dependencies present in the original source, making it easy to integrate into modern frameworks like React, Next.js, and others. Below, you’ll find updated documentation to help you start editing the game and creating your own customized variant.
 
 ![Demo](demo.gif)
 
