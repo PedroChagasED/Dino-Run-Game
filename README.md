@@ -2,7 +2,7 @@
 
 This the latest source code for T-rex Runner extracted from newly migrated code in chromium source code. We have also applied some more changes on the top of it to make it independent of chromium browser and improved code patterns. The code is ES6 without any circular dependency (found in original source code) which makes it easy to integrate with modern codebases like React, NextJS, etc. Here is an improved documentation on how to start editing this game to build a new variant.
 
-# Updating Game Assets
+## Updating Game Assets
 
 The game assets are loaded from the offline-resources div in the HTML. There are two main types of assets:
 
@@ -34,7 +34,7 @@ To modify the game assets:
 
 > Its required to always import atleast 1 CSS Stylesheet. The game logic injects some css in the first stylesheet if its not found then it will crash.
 
-# Initializing Game
+## Initializing Game
 
 The game can be initialized using the Runner class - it takes the container element for the game and optional configs. Using the Runner class you can create a new instance and this instance can be used to control the game settings and events.
 
@@ -46,7 +46,7 @@ const runner = new Runner(trexGameContainer);
 console.log(runner); // to see all the available methods
 ```
 
-# Custom Changes We Made
+## Custom Changes We Made
 
 We have extracted this source code from chromium and have made some changes on the top the source code to make it runnable with modern frameworks. All the changes can be tracked in the codebase using the fingerprint comment structure "@change -> Change reason".
 
@@ -55,7 +55,7 @@ We have extracted this source code from chromium and have made some changes on t
 3. Removed slow speed mode checkbox. (It can still be enabled by clicking on the T-Rex first and then starting the game)
 4. Attached Runner to `window.Runner` and removed circular dependency in any files. (Modern compilers treat it as a bad practice and throws an error)
 
-# How to run in new project?
+## How to run in new project?
 
 1. Copy resources folder to your project.
 2. Copy images folder to your public folder.
@@ -64,7 +64,7 @@ We have extracted this source code from chromium and have made some changes on t
 5. Create a new script which will import the `Runner` class from the `offline.js` file and create a new instance. (Similar to `script.js`)
 6. This should run the dino game in your project. You may need to adjust the styling of your container.
 
-# What is Slow Speed Mode?
+## What is Slow Speed Mode?
 
 Slow Speed Mode is an accessibility setting that makes the game more accessible for people with vision impairments. When enabled, it:
 
@@ -86,3 +86,49 @@ The specific adjustments made in slow mode include:
 - Audio proximity threshold adjusted for better cues
 
 This allows players with visual impairments to rely more on audio feedback and have more time to react to obstacles, making the game more inclusive and enjoyable for all players.
+
+## Runner methods
+
+The Runner class provides several methods to control the game. Here are the key methods available:
+
+### Game Control Methods
+
+- `setSpeed(speed: number)` - Sets the game speed to a specific value
+- `setArcadeMode()` - Enables arcade mode with different positioning and behavior
+- `restart()` - Restarts the game from the beginning
+- `play()` - Starts/resumes the game
+- `stop()` - Pauses the game
+- `crash()` - Triggers the crash animation and game over state
+
+### Input Methods
+
+- `onKeyDown(e: KeyboardEvent)` - Handles keyboard input for controls
+- `onKeyUp(e: KeyboardEvent)` - Handles keyboard key release events
+- `onGamepadConnected(e: GamepadEvent)` - Handles gamepad connection
+- `onGamepadDisconnected()` - Handles gamepad disconnection
+
+### Visual Methods
+
+- `invert()` - Inverts the game colors (dark/light mode)
+- `update()` - Updates game objects and animations each frame
+- `clearCanvas()` - Clears the game canvas
+- `updateCanvasScaling()` - Updates canvas size based on device pixel ratio
+
+### Sound Methods
+
+- `generatedSoundFx.init()` - Initializes sound effects
+- `playSound(soundType)` - Plays a specific sound effect
+- `stopAllSounds()` - Stops all currently playing sounds
+
+### State Methods
+
+- `isRunning()` - Returns whether game is currently running
+- `hasObstacles()` - Checks if there are active obstacles
+- `isArcadeMode()` - Checks if arcade mode is enabled
+- `isInvertedMode()` - Checks if colors are inverted
+
+### Score Methods
+
+- `updateHighScore(highScore)` - Updates the high score
+- `distanceRan()` - Gets the current distance/score
+- `getSpeedY()` - Gets current vertical speed
