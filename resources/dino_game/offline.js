@@ -55,6 +55,8 @@ const A11Y_STRINGS = {
  */
 
 const loadTimeData = undefined;
+
+// @change -> Refactored Functional to Class based structure
 export class Runner {
   /**
    * Default game configuration.
