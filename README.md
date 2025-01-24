@@ -1,4 +1,7 @@
 # T-Rex Runner from Chromium 2024
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This is the latest version of the T-Rex Runner source code, extracted from the newly migrated Chromium repository. We have enhanced it further to make it independent of the Chromium browser and to improve the overall code structure. This is the latest codebase written in ES6, free from the circular dependencies present in the original source, making it easy to integrate into modern frameworks like React, Next.js, and others. Below, you’ll find updated documentation to help you start editing the game and creating your own customized variant.
 
@@ -158,3 +161,25 @@ Github Mirror : https://github.com/chromium/chromium/tree/main/components/neterr
 ## Contributing
 
 Feel free to open [issues](https://github.com/devfolioco/t-rex-runner-game/issues/new/choose) and [pull requests](https://github.com/devfolioco/t-rex-runner-game/pulls)!
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://prathamvaidya.in"><img src="https://avatars.githubusercontent.com/u/61202986?v=4?s=100" width="100px;" alt="Pratham Vaidya"/><br /><sub><b>Pratham Vaidya</b></sub></a><br /><a href="#maintenance-prathamVaidya" title="Maintenance">🚧</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
