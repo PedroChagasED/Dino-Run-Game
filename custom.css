@@ -53,10 +53,18 @@ h6 {
   color: rgb(122, 122, 122);
 }
 
-.flex-row {
+.flex-box {
   display: flex;
-  gap: 16px;
+  gap: 48px;
   justify-content: space-between;
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 768px) {
+  .flex-box {
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 
 .flex-item {
@@ -64,6 +72,10 @@ h6 {
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+
+.flex-item input {
+  width: 180px;
 }
 
 .onchain-cta {
