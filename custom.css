@@ -82,6 +82,7 @@ h6 {
 .link-section {
   margin-top: 32px;
   display: flex;
+  flex-direction: column;
   gap: 16px;
   justify-content: center;
   align-items: center;
