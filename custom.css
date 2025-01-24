@@ -42,3 +42,56 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+
+.config-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  font-family: OnchainDino;
+  text-transform: uppercase;
+  color: rgb(122, 122, 122);
+}
+
+.flex-row {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.onchain-cta {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.onchain-cta:active {
+  scale: 0.95;
+}
+
+.link-section {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  font-size: 16px;
+  color: rgb(122, 122, 122);
+}
+
+a:active {
+  scale: 0.95;
+}
