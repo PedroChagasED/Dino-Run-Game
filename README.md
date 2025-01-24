@@ -42,7 +42,7 @@ The game can be initialized using the Runner class - it takes the container elem
 
 Example:
 
-```
+```js
 const trexGameContainer = document.querySelector('.trex-game');
 const runner = new Runner(trexGameContainer);
 console.log(runner); // to see all the available methods
